@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DatosFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="cl.dany.prueba1.ResultFragment"
+        android:layout_margin="20dp">
+
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+
+            android:id="@+id/ancla1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+
+            android:id="@+id/ancla2"
+            android:layout_below="@id/ancla2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+
+            android:id="@+id/ancla3"
+            android:layout_below="@id/ancla2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:inputType="number"
+            android:id="@+id/txtDay"
+            android:layout_below="@id/ancla3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Día"/>
+
+        <EditText
+
+            android:id="@+id/txtMonth"
+            android:layout_below="@id/txtDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mes"/>
+        <Button
+            android:id="@+id/btnFind"
+            android:layout_below="@id/txtMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="buscar"
+            android:background="@color/colorAccent"/>
+
+    </RelativeLayout>
+
+
+</FrameLayout>
