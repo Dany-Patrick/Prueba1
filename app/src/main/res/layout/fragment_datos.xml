@@ -10,49 +10,61 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="cl.dany.prueba1.ResultFragment"
-        android:layout_margin="20dp">
+        android:layout_margin="20dp"
+        tools:context="cl.dany.prueba1.ResultFragment">
 
         <!-- TODO: Update blank fragment layout -->
-        <TextView
 
-            android:id="@+id/ancla1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-        <TextView
-
-            android:id="@+id/ancla2"
-            android:layout_below="@id/ancla2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-        <TextView
-
-            android:id="@+id/ancla3"
-            android:layout_below="@id/ancla2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/lineal">
         <EditText
-            android:inputType="number"
+
             android:id="@+id/txtDay"
-            android:layout_below="@id/ancla3"
-            android:layout_width="match_parent"
+            android:layout_width="140dp"
             android:layout_height="wrap_content"
-            android:hint="Día"/>
+            android:layout_margin="10dp"
+            android:hint="Día (1 al 31)"
+            android:inputType="number" />
 
         <EditText
 
             android:id="@+id/txtMonth"
-            android:layout_below="@id/txtDay"
-            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_width="140dp"
             android:layout_height="wrap_content"
-            android:hint="Mes"/>
+            android:layout_below="@id/txtDay"
+            android:hint="Mes (1 al 12)"
+            android:inputType="number" />
+
+
+</LinearLayout>
         <Button
             android:id="@+id/btnFind"
-            android:layout_below="@id/txtMonth"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="buscar"
-            android:background="@color/colorAccent"/>
+            android:layout_below="@id/lineal"
+            android:background="@color/colorAccent"
+            android:text="buscar" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/imgSign"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/btnFind"
+            android:layout_marginTop="30dp"
+
+
+            />
+        <TextView
+
+            android:visibility="gone"
+            android:layout_below="@id/imgSign"
+            android:id="@+id/txtDataSign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
     </RelativeLayout>
 
