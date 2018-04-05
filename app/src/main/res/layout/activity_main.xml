@@ -26,7 +26,7 @@
    >
 
         <TextView
-            android:id="@+id/ancla"
+            android:id="@+id/anchor"
             android:layout_margin="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
 
         />
         <ImageView
-             android:layout_below="@id/ancla"
+             android:layout_below="@id/anchor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
            />
@@ -43,7 +43,7 @@
     </RelativeLayout>
 
     <Button
-        android:id="@+id/btnAveriguar"
+        android:id="@+id/btnFind"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"

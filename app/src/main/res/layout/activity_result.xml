@@ -8,8 +8,8 @@
     >
 
     <fragment
-        android:id="@+id/datosFragment"
-        android:name="cl.dany.prueba1.DatosFragment"
+        android:id="@+id/dataFragment"
+        android:name="cl.dany.prueba1.DataFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         />
